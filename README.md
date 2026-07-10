@@ -8,3 +8,5 @@ I have enable ssh using commands 'ip  domain-name beta.local' 'username '' passw
 i have done this to all routers except the isp which i encrypted the cli access only.
 Then i has set banner message of the day 'banner motd 'for info about prohibited access. i have made sure to run 'copy running-config startup-config' to mantain the configs even after router shut-down.
 Here is the topology. ![network topology](secondphase.png)
+
+Today i have done switch hardening;setting up password for console,ssh and setting banner display,i have used same commands used to harden router except i added 'no ip domain-lookup' to exempt it from doing dns .I also named the remaining need to be named devices.![network topology](secondphase2.png)
