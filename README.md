@@ -10,3 +10,7 @@ Then i has set banner message of the day 'banner motd 'for info about prohibited
 Here is the topology. ![network topology](secondphase.png)
 
 Today i have done switch hardening;setting up password for console,ssh and setting banner display,i have used same commands used to harden router except i added 'no ip domain-lookup' to exempt it from doing dns .I also named the remaining need to be named devices.![network topology](secondphase2.png)
+
+Today i have created vlan 10,mamangement, vlan 20, staff vlan 30, sales vlan 40 server and change the native vlan to 99 from 1 for security purposes. i have assigned all the vlans on the core switch, then on dst-sw1 i have assigned vlan 20,30,99 for redudancy.Then dst-sw2 assigned 10,40,99 ,i have improved than on the last projevt where i assigned all vlans to each switch.
+Acc-sw1 has vlan 20,99. Acc-sw2 has vlan 30,99. Acc-sw3 has vlan 10,99. Acc-sw4 has vlan 40,99 ,Acc-sw5 has vlan 20,99,Acc-sw6 has vlan 30,99.Remote-sw has vlan 10,99.
+I have set vlan trunking on both ends of the switches,with the native vlan as 99 except for the remote switch which i have set mode to access since it serves one vlan 10.
