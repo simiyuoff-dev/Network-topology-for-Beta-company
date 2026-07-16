@@ -13,4 +13,4 @@ Today i have done switch hardening;setting up password for console,ssh and setti
 
 Today i have created vlan 10,mamangement, vlan 20, staff vlan 30, sales vlan 40 server and change the native vlan to 99 from 1 for security purposes. i have assigned all the vlans on the core switch, then on dst-sw1 i have assigned vlan 20,30,99 for redudancy.Then dst-sw2 assigned 10,40,99 ,i have improved than on the last projevt where i assigned all vlans to each switch.
 Acc-sw1 has vlan 20,99. Acc-sw2 has vlan 30,99. Acc-sw3 has vlan 10,99. Acc-sw4 has vlan 40,99 ,Acc-sw5 has vlan 20,99,Acc-sw6 has vlan 30,99.Remote-sw has vlan 10,99.
-I have set vlan trunking on both ends of the switches,with the native vlan as 99 except for the remote switch which i have set mode to access since it serves one vlan 10.Confirm on secondphase2.pkt
+I have set vlan trunking on both ends of the switches,with the native vlan as 99 except for the remote switch which i have set mode to access since it serves one vlan 10.Set the port facing the pcs and other end device to access mode and assigned the vlans as specified.Confirm on secondphase2.pkt
